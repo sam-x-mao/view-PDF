@@ -1,0 +1,116 @@
+#index {
+  color: #d3d6dd;
+  width: 1926px;
+  height: 1080px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: left top;
+  overflow: hidden;
+  
+  .bg {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-image: url("../assets/pageBg.png");
+    background-size: cover;
+    background-position: center center;
+  }
+  .lodingbg{
+    background-color: #001B28;
+    width: 100%;
+    height: 100%;
+  }
+
+  .host-body {
+    height: 100%;
+    width: 100%;
+    .title {
+      position: relative;
+      padding-top: 40px;
+      height: 85px;
+      text-align: center;
+      .title-text {
+        font-size: 36px;
+        color: #63ECFF;
+      }
+    }
+    .body-box{
+      display: flex;
+      position: relative;
+      height: calc(100% - 85px);
+      width: 100%;
+      padding: 36px 0px 18px 0px;
+    }
+    .left{
+      height: 100%;
+      width: 527px;
+    }
+    .center{
+      position: relative;
+      z-index: 9;
+      flex: 1;
+      color: #88C8D2;
+      .center-top,.center-mid,.center-bottom{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .center-top{
+        flex-direction: column;
+        padding-bottom: 34px;
+        .h1{
+          font-size: 46px;
+          line-height: 70px;
+        }
+        .h2{
+          font-size: 36px;
+          line-height: 50px;
+        }
+      }
+      .center-mid{
+        height: 633px;
+      }
+      .center-bottom{
+        height: 154px;
+        .star-area1{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 70px;
+          height: 70px;
+          margin-right: 8px;
+          border-radius: 6px;
+          background-color: #01202C;
+          border: 1px solid #032D3A;
+          img{
+            width: 60px;
+            height: 60px;
+          }
+        }
+        .star-area{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background-color: #01202C;
+          border: 1px solid #032D3A;
+          img{
+            width: 30px;
+            height: 30px;
+          }
+        }
+      }
+    }
+    .right{
+      height: 100%;
+      width: 520px;
+    }
+  }
+}
+
+
